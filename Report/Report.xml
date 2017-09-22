@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="5" result="Failed" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="0" engine-version="3.7.0.0" clr-version="4.0.30319.42000" start-time="2017-09-14 08:12:28Z" end-time="2017-09-14 08:12:44Z" duration="15.635533">
+  <command-line><![CDATA[C:\Users\Asus\Desktop\Automation\ILFramework\packages\NUnit.ConsoleRunner.3.7.0\tools\nunit3-console.exe  C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\bin\Debug\ILFramework.dll --result C:\Users\Asus\Desktop\Automation\ILFramework\Report\Report.xml]]></command-line>
+  <test-suite type="Assembly" id="0-1010" name="ILFramework.dll" fullname="C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\bin\Debug\ILFramework.dll" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2017-09-14 08:12:31Z" end-time="2017-09-14 08:12:44Z" duration="13.385050" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.7.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.15063.0" platform="Win32NT" cwd="C:\Users\Asus\Desktop\Automation\ILFramework" machine-name="DESKTOP-L0LKK5L" user="Asus" user-domain="DESKTOP-L0LKK5L" culture="en-GB" uiculture="en-GB" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\Asus\Desktop\Automation\ILFramework" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="ParallelScope" value="Fixtures" />
+      <property name="_PID" value="97604" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1011" name="ILFramework" fullname="ILFramework" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2017-09-14 08:12:31Z" end-time="2017-09-14 08:12:44Z" duration="13.329635" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="0-1012" name="Features" fullname="ILFramework.Features" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2017-09-14 08:12:31Z" end-time="2017-09-14 08:12:44Z" duration="13.324686" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="0-1000" name="HomepageFeature" fullname="ILFramework.Features.HomepageFeature" classname="ILFramework.Features.HomepageFeature" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2017-09-14 08:12:31Z" end-time="2017-09-14 08:12:35Z" duration="4.247308" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <properties>
+            <property name="Description" value="Homepage" />
+          </properties>
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="ParameterizedMethod" id="0-1002" name="CheckNCSHomePage" fullname="ILFramework.Features.HomepageFeature.CheckNCSHomePage" classname="ILFramework.Features.HomepageFeature" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2017-09-14 08:12:31Z" end-time="2017-09-14 08:12:35Z" duration="3.421647" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="Description" value="Check NCS HomePage" />
+              <property name="Category" value="mytag" />
+            </properties>
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="0-1001" name="CheckNCSHomePage(&quot;nurse&quot;,null)" fullname="ILFramework.Features.HomepageFeature.CheckNCSHomePage(&quot;nurse&quot;,null)" methodname="CheckNCSHomePage" classname="ILFramework.Features.HomepageFeature" runstate="Runnable" seed="1293526396" result="Failed" label="Error" start-time="2017-09-14 08:12:31Z" end-time="2017-09-14 08:12:35Z" duration="3.397218" asserts="0">
+              <failure>
+                <message><![CDATA[TechTalk.SpecFlow.SpecFlowException : The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                <stack-trace><![CDATA[   at TechTalk.SpecFlow.ScenarioContext.get_Current()
+   at ILFramework.Framework.BrowserStackService.Init() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\BrowserStackService.cs:line 37
+   at ILFramework.Hooks.InitBrowserStackInstance() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 59
+   at ILFramework.Hooks.InstantiateDriver(String browser) in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 51
+   at ILFramework.Hooks.BeforeScenario() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 25
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.InvokeHook(IBindingInvoker invoker, IHookBinding hookBinding, HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at ILFramework.Features.HomepageFeature.ScenarioSetup(ScenarioInfo scenarioInfo)
+   at ILFramework.Features.HomepageFeature.CheckNCSHomePage(String term, String[] exampleTags) in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Features\Homepage.feature:line 4
+--TearDown
+   at ILFramework.Hooks.AfterScenario() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 39
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.InvokeHook(IBindingInvoker invoker, IHookBinding hookBinding, HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
+   at ILFramework.Features.HomepageFeature.ScenarioTearDown()]]></stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1003" name="JobProfileSearchFeature" fullname="ILFramework.Features.JobProfileSearchFeature" classname="ILFramework.Features.JobProfileSearchFeature" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2017-09-14 08:12:31Z" end-time="2017-09-14 08:12:44Z" duration="13.321149" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <properties>
+            <property name="Description" value="JobProfileSearch" />
+          </properties>
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <output><![CDATA[-> Using app.config
+]]></output>
+          <test-suite type="ParameterizedMethod" id="0-1009" name="DFC_106_A1DisplayOfTotalNumberOfResultsFound" fullname="ILFramework.Features.JobProfileSearchFeature.DFC_106_A1DisplayOfTotalNumberOfResultsFound" classname="ILFramework.Features.JobProfileSearchFeature" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2017-09-14 08:12:31Z" end-time="2017-09-14 08:12:41Z" duration="9.509345" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="Description" value="[DFC-106 - A1] Display of total number of results found" />
+            </properties>
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="0-1006" name="DFC_106_A1DisplayOfTotalNumberOfResultsFound(&quot;Nurse&quot;,&quot;7 results found&quot;,null)" fullname="ILFramework.Features.JobProfileSearchFeature.DFC_106_A1DisplayOfTotalNumberOfResultsFound(&quot;Nurse&quot;,&quot;7 results found&quot;,null)" methodname="DFC_106_A1DisplayOfTotalNumberOfResultsFound" classname="ILFramework.Features.JobProfileSearchFeature" runstate="Runnable" seed="474194947" result="Failed" label="Error" start-time="2017-09-14 08:12:31Z" end-time="2017-09-14 08:12:35Z" duration="3.397203" asserts="0">
+              <failure>
+                <message><![CDATA[TechTalk.SpecFlow.SpecFlowException : The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                <stack-trace><![CDATA[   at TechTalk.SpecFlow.ScenarioContext.get_Current()
+   at ILFramework.Framework.BrowserStackService.Init() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\BrowserStackService.cs:line 37
+   at ILFramework.Hooks.InitBrowserStackInstance() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 59
+   at ILFramework.Hooks.InstantiateDriver(String browser) in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 51
+   at ILFramework.Hooks.BeforeScenario() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 25
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.InvokeHook(IBindingInvoker invoker, IHookBinding hookBinding, HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at ILFramework.Features.JobProfileSearchFeature.ScenarioSetup(ScenarioInfo scenarioInfo)
+   at ILFramework.Features.JobProfileSearchFeature.DFC_106_A1DisplayOfTotalNumberOfResultsFound(String term, String resultText, String[] exampleTags) in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Features\JobProfileSearch.feature:line 14
+--TearDown
+   at ILFramework.Hooks.AfterScenario() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 39
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.InvokeHook(IBindingInvoker invoker, IHookBinding hookBinding, HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
+   at ILFramework.Features.JobProfileSearchFeature.ScenarioTearDown()]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1007" name="DFC_106_A1DisplayOfTotalNumberOfResultsFound(&quot;Dental Nurse&quot;,&quot;1 result found&quot;,null)" fullname="ILFramework.Features.JobProfileSearchFeature.DFC_106_A1DisplayOfTotalNumberOfResultsFound(&quot;Dental Nurse&quot;,&quot;1 result found&quot;,null)" methodname="DFC_106_A1DisplayOfTotalNumberOfResultsFound" classname="ILFramework.Features.JobProfileSearchFeature" runstate="Runnable" seed="361500474" result="Failed" label="Error" start-time="2017-09-14 08:12:35Z" end-time="2017-09-14 08:12:38Z" duration="3.067432" asserts="0">
+              <failure>
+                <message><![CDATA[TechTalk.SpecFlow.SpecFlowException : The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                <stack-trace><![CDATA[   at TechTalk.SpecFlow.ScenarioContext.get_Current()
+   at ILFramework.Framework.BrowserStackService.Init() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\BrowserStackService.cs:line 37
+   at ILFramework.Hooks.InitBrowserStackInstance() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 59
+   at ILFramework.Hooks.InstantiateDriver(String browser) in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 51
+   at ILFramework.Hooks.BeforeScenario() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 25
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.InvokeHook(IBindingInvoker invoker, IHookBinding hookBinding, HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at ILFramework.Features.JobProfileSearchFeature.ScenarioSetup(ScenarioInfo scenarioInfo)
+   at ILFramework.Features.JobProfileSearchFeature.DFC_106_A1DisplayOfTotalNumberOfResultsFound(String term, String resultText, String[] exampleTags) in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Features\JobProfileSearch.feature:line 14
+--TearDown
+   at ILFramework.Hooks.AfterScenario() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 39
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.InvokeHook(IBindingInvoker invoker, IHookBinding hookBinding, HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
+   at ILFramework.Features.JobProfileSearchFeature.ScenarioTearDown()]]></stack-trace>
+              </failure>
+              <output><![CDATA[-> #9: warning: The previous ScenarioContext was not disposed.
+-> #9: warning: The previous ScenarioContext was not disposed.
+-> #9: warning: The previous ScenarioContext was not disposed.
+]]></output>
+            </test-case>
+            <test-case id="0-1008" name="DFC_106_A1DisplayOfTotalNumberOfResultsFound(&quot;&lt;&gt;&quot;,&quot;0 results found - try again using a different job title&quot;,null)" fullname="ILFramework.Features.JobProfileSearchFeature.DFC_106_A1DisplayOfTotalNumberOfResultsFound(&quot;&lt;&gt;&quot;,&quot;0 results found - try again using a different job title&quot;,null)" methodname="DFC_106_A1DisplayOfTotalNumberOfResultsFound" classname="ILFramework.Features.JobProfileSearchFeature" runstate="Runnable" seed="1711616466" result="Failed" label="Error" start-time="2017-09-14 08:12:38Z" end-time="2017-09-14 08:12:41Z" duration="3.020471" asserts="0">
+              <failure>
+                <message><![CDATA[TechTalk.SpecFlow.SpecFlowException : The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                <stack-trace><![CDATA[   at TechTalk.SpecFlow.ScenarioContext.get_Current()
+   at ILFramework.Framework.BrowserStackService.Init() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\BrowserStackService.cs:line 37
+   at ILFramework.Hooks.InitBrowserStackInstance() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 59
+   at ILFramework.Hooks.InstantiateDriver(String browser) in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 51
+   at ILFramework.Hooks.BeforeScenario() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 25
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.InvokeHook(IBindingInvoker invoker, IHookBinding hookBinding, HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at ILFramework.Features.JobProfileSearchFeature.ScenarioSetup(ScenarioInfo scenarioInfo)
+   at ILFramework.Features.JobProfileSearchFeature.DFC_106_A1DisplayOfTotalNumberOfResultsFound(String term, String resultText, String[] exampleTags) in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Features\JobProfileSearch.feature:line 14
+--TearDown
+   at ILFramework.Hooks.AfterScenario() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 39
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.InvokeHook(IBindingInvoker invoker, IHookBinding hookBinding, HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
+   at ILFramework.Features.JobProfileSearchFeature.ScenarioTearDown()]]></stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+          <test-suite type="ParameterizedMethod" id="0-1005" name="DFC_167_A2_1TheNextPaginationControlIsNOTShownIfTheLastResultIsShownOnThePage" fullname="ILFramework.Features.JobProfileSearchFeature.DFC_167_A2_1TheNextPaginationControlIsNOTShownIfTheLastResultIsShownOnThePage" classname="ILFramework.Features.JobProfileSearchFeature" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2017-09-14 08:12:41Z" end-time="2017-09-14 08:12:44Z" duration="3.022285" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="Description" value="[DFC-167 - A2 - 1] The &quot;Next&quot; pagination control is NOT shown if the last result is shown on the page" />
+              <property name="Category" value="mytag" />
+            </properties>
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="0-1004" name="DFC_167_A2_1TheNextPaginationControlIsNOTShownIfTheLastResultIsShownOnThePage(&quot;nurse&quot;,&quot;5&quot;,null)" fullname="ILFramework.Features.JobProfileSearchFeature.DFC_167_A2_1TheNextPaginationControlIsNOTShownIfTheLastResultIsShownOnThePage(&quot;nurse&quot;,&quot;5&quot;,null)" methodname="DFC_167_A2_1TheNextPaginationControlIsNOTShownIfTheLastResultIsShownOnThePage" classname="ILFramework.Features.JobProfileSearchFeature" runstate="Runnable" seed="971870130" result="Failed" label="Error" start-time="2017-09-14 08:12:41Z" end-time="2017-09-14 08:12:44Z" duration="3.018674" asserts="0">
+              <failure>
+                <message><![CDATA[TechTalk.SpecFlow.SpecFlowException : The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details.
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                <stack-trace><![CDATA[   at TechTalk.SpecFlow.ScenarioContext.get_Current()
+   at ILFramework.Framework.BrowserStackService.Init() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\BrowserStackService.cs:line 37
+   at ILFramework.Hooks.InitBrowserStackInstance() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 59
+   at ILFramework.Hooks.InstantiateDriver(String browser) in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 51
+   at ILFramework.Hooks.BeforeScenario() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 25
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.InvokeHook(IBindingInvoker invoker, IHookBinding hookBinding, HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at ILFramework.Features.JobProfileSearchFeature.ScenarioSetup(ScenarioInfo scenarioInfo)
+   at ILFramework.Features.JobProfileSearchFeature.DFC_167_A2_1TheNextPaginationControlIsNOTShownIfTheLastResultIsShownOnThePage(String term, String countOfProfiles, String[] exampleTags) in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Features\JobProfileSearch.feature:line 4
+--TearDown
+   at ILFramework.Hooks.AfterScenario() in C:\Users\Asus\Desktop\Automation\ILFramework\ILFramework\Framework\Hooks.cs:line 39
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.InvokeHook(IBindingInvoker invoker, IHookBinding hookBinding, HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
+   at ILFramework.Features.JobProfileSearchFeature.ScenarioTearDown()]]></stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
